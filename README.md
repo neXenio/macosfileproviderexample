@@ -8,9 +8,9 @@ The goal was to create a starting point for myself where I can debug a file prov
 
 ## Get Started
 
-1. Open the project
-2. Run the app (which triggers the build and also builds the depending extension)
-3. Ensure the extension is activated in the system preferences pane for extensions.
+1. Open the Xcode project.
+2. Run the app in Xcode. This triggers the build and also builds the depending extension target.
+3. Ensure the "SomeProduct" extension is activated in the system preferences pane for extensions. It may take a moment after the first build to show up. Extensions are loaded by the system and the containing apps do not have control over that.
 4. Finder should list "SomeProduct - SomeDomain" in the "Locations" section of the side bar. The latter likely needs to be enabled in the Finder preferences.
 5. Selecting that location Finder should list the dummy item "a file".
 
