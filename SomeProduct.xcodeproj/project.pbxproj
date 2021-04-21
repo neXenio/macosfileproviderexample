@@ -15,6 +15,7 @@
 		D06C9C4425F7B01300354820 /* FileProviderItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06C9C4325F7B01300354820 /* FileProviderItem.swift */; };
 		D06C9C4625F7B01300354820 /* FileProviderEnumerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06C9C4525F7B01300354820 /* FileProviderEnumerator.swift */; };
 		D06C9C4B25F7B01300354820 /* SomeProvider.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D06C9C3F25F7B01300354820 /* SomeProvider.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D0FA53D026300F1700C32328 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = D0FA53CF26300F1700C32328 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		D06C9C4525F7B01300354820 /* FileProviderEnumerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileProviderEnumerator.swift; sourceTree = "<group>"; };
 		D06C9C4725F7B01300354820 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D06C9C4825F7B01300354820 /* SomeProvider.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SomeProvider.entitlements; sourceTree = "<group>"; };
+		D0FA53CF26300F1700C32328 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 		D06C9C1F25F7AFD200354820 = {
 			isa = PBXGroup;
 			children = (
+				D0FA53CF26300F1700C32328 /* README.md */,
 				D06C9C2A25F7AFD200354820 /* SomeProduct */,
 				D06C9C4025F7B01300354820 /* SomeProvider */,
 				D06C9C2925F7AFD200354820 /* Products */,
@@ -198,6 +201,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0FA53D026300F1700C32328 /* README.md in Resources */,
 				D06C9C3025F7AFD400354820 /* Assets.xcassets in Resources */,
 				D06C9C3325F7AFD400354820 /* Main.storyboard in Resources */,
 			);
