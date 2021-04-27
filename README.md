@@ -20,4 +20,4 @@ From now on you can start working on your file provider and debug it by attachin
 
 This project consists 99% of the templates provided by Xcode. I created a macOS app project in Xcode 12.5 Beta 3 with Swift and Storyboards. Then I added a file provider extension target from the Xcode templates. In the end I just set up a common app group and a lower deployment target.
 
-The availability of the file provider extension template is the reason for using Xcode 12.5 Beta 3. It was not available in previous versions and a workaround barely to find. The project can be built with previous Xcode releases, too.
+The availability of the file provider extension template was the reason for using Xcode 12.5 Beta 3. It was not available in previous versions and a workaround barely to find. The project can be built with previous Xcode releases, too. The final Xcode 12.5 release [was announced with the availability of the template](https://developer.apple.com/documentation/xcode-release-notes/xcode-12_5-release-notes) at the end of April 2021.
