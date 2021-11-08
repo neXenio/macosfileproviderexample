@@ -14,9 +14,11 @@ class FileProviderItem: NSObject, NSFileProviderItem {
     // TODO: implement the accessors to return the values from your extension's backing model
     
     private let identifier: NSFileProviderItemIdentifier
+    private let size: NSNumber
     
-    init(identifier: NSFileProviderItemIdentifier) {
+    init(identifier: NSFileProviderItemIdentifier, size: Int) {
         self.identifier = identifier
+        self.size = NSNumber(value: size)
     }
     
     var itemIdentifier: NSFileProviderItemIdentifier {
@@ -27,8 +29,28 @@ class FileProviderItem: NSObject, NSFileProviderItem {
         return .rootContainer
     }
     
+    var documentSize: NSNumber? {
+        return self.size
+    }
+    
+    var lastUsedDate: Date? {
+        return Date.now
+    }
+    
     var capabilities: NSFileProviderItemCapabilities {
-        return .allowsAll
+        let result: NSFileProviderItemCapabilities = [
+            .allowsAddingSubItems,
+            .allowsContentEnumerating,
+            .allowsDeleting,
+            .allowsReading,
+            .allowsRenaming,
+            .allowsReparenting,
+            .allowsWriting,
+            .allowsEvicting,
+            .allowsExcludingFromSync,
+            .allowsTrashing
+        ]
+        return result
     }
     
     var itemVersion: NSFileProviderItemVersion {
