@@ -6,6 +6,7 @@
 //
 
 import FileProvider
+import SomeProviderCommonPackage
 
 class FileProviderEnumerator: NSObject, NSFileProviderEnumerator {
     

@@ -8,6 +8,8 @@
 	<true/>
 	<key>com.apple.security.application-groups</key>
 	<array>
+		<string>group.SomeOrganization.SomeProduct</string>
+		<string>com.nexenio</string>
 		<string>$(TeamIdentifierPrefix)SomeProduct</string>
 	</array>
 </dict>

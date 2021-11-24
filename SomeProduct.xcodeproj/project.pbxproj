@@ -3,17 +3,19 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC6A1D97273D3C1100617C1E /* FileProviderEnumerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6A1D96273D3C1100617C1E /* FileProviderEnumerator.swift */; };
+		ACB97914273D408800AFA263 /* SomeProviderCommonPackage in Frameworks */ = {isa = PBXBuildFile; productRef = ACB97913273D408800AFA263 /* SomeProviderCommonPackage */; };
+		ACBC24B1273A80330035FDFC /* XPCProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBC24B0273A80330035FDFC /* XPCProtocol.swift */; };
+		ACBC24CF273A8F6B0035FDFC /* XPCHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBC24CE273A8F6B0035FDFC /* XPCHandler.swift */; };
 		D06C9C2C25F7AFD200354820 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06C9C2B25F7AFD200354820 /* AppDelegate.swift */; };
 		D06C9C2E25F7AFD200354820 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06C9C2D25F7AFD200354820 /* ViewController.swift */; };
 		D06C9C3025F7AFD400354820 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D06C9C2F25F7AFD400354820 /* Assets.xcassets */; };
 		D06C9C3325F7AFD400354820 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D06C9C3125F7AFD400354820 /* Main.storyboard */; };
 		D06C9C4225F7B01300354820 /* FileProviderExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06C9C4125F7B01300354820 /* FileProviderExtension.swift */; };
-		D06C9C4425F7B01300354820 /* FileProviderItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06C9C4325F7B01300354820 /* FileProviderItem.swift */; };
-		D06C9C4625F7B01300354820 /* FileProviderEnumerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06C9C4525F7B01300354820 /* FileProviderEnumerator.swift */; };
 		D06C9C4B25F7B01300354820 /* SomeProvider.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D06C9C3F25F7B01300354820 /* SomeProvider.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		D0FA53D026300F1700C32328 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = D0FA53CF26300F1700C32328 /* README.md */; };
 /* End PBXBuildFile section */
@@ -43,6 +45,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		AC6A1D94273D3BA000617C1E /* SomeProviderCommonPackage */ = {isa = PBXFileReference; lastKnownFileType = folder; name = SomeProviderCommonPackage; path = ../SomeProviderCommonPackage; sourceTree = "<group>"; };
+		AC6A1D96273D3C1100617C1E /* FileProviderEnumerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileProviderEnumerator.swift; sourceTree = "<group>"; };
+		ACBC24B0273A80330035FDFC /* XPCProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XPCProtocol.swift; sourceTree = "<group>"; };
+		ACBC24CE273A8F6B0035FDFC /* XPCHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XPCHandler.swift; sourceTree = "<group>"; };
 		D06C9C2825F7AFD200354820 /* SomeProduct.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SomeProduct.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D06C9C2B25F7AFD200354820 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D06C9C2D25F7AFD200354820 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -52,8 +58,6 @@
 		D06C9C3525F7AFD400354820 /* SomeProduct.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SomeProduct.entitlements; sourceTree = "<group>"; };
 		D06C9C3F25F7B01300354820 /* SomeProvider.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SomeProvider.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		D06C9C4125F7B01300354820 /* FileProviderExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileProviderExtension.swift; sourceTree = "<group>"; };
-		D06C9C4325F7B01300354820 /* FileProviderItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileProviderItem.swift; sourceTree = "<group>"; };
-		D06C9C4525F7B01300354820 /* FileProviderEnumerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileProviderEnumerator.swift; sourceTree = "<group>"; };
 		D06C9C4725F7B01300354820 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D06C9C4825F7B01300354820 /* SomeProvider.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SomeProvider.entitlements; sourceTree = "<group>"; };
 		D0FA53CF26300F1700C32328 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -71,12 +75,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACB97914273D408800AFA263 /* SomeProviderCommonPackage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AC6A1D93273D3BA000617C1E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AC6A1D94273D3BA000617C1E /* SomeProviderCommonPackage */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D06C9C1F25F7AFD200354820 = {
 			isa = PBXGroup;
 			children = (
@@ -84,6 +97,7 @@
 				D06C9C2A25F7AFD200354820 /* SomeProduct */,
 				D06C9C4025F7B01300354820 /* SomeProvider */,
 				D06C9C2925F7AFD200354820 /* Products */,
+				AC6A1D93273D3BA000617C1E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -113,8 +127,9 @@
 			isa = PBXGroup;
 			children = (
 				D06C9C4125F7B01300354820 /* FileProviderExtension.swift */,
-				D06C9C4325F7B01300354820 /* FileProviderItem.swift */,
-				D06C9C4525F7B01300354820 /* FileProviderEnumerator.swift */,
+				AC6A1D96273D3C1100617C1E /* FileProviderEnumerator.swift */,
+				ACBC24B0273A80330035FDFC /* XPCProtocol.swift */,
+				ACBC24CE273A8F6B0035FDFC /* XPCHandler.swift */,
 				D06C9C4725F7B01300354820 /* Info.plist */,
 				D06C9C4825F7B01300354820 /* SomeProvider.entitlements */,
 			);
@@ -156,6 +171,9 @@
 			dependencies = (
 			);
 			name = SomeProvider;
+			packageProductDependencies = (
+				ACB97913273D408800AFA263 /* SomeProviderCommonPackage */,
+			);
 			productName = SomeProvider;
 			productReference = D06C9C3F25F7B01300354820 /* SomeProvider.appex */;
 			productType = "com.apple.product-type.app-extension";
@@ -230,9 +248,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC6A1D97273D3C1100617C1E /* FileProviderEnumerator.swift in Sources */,
+				ACBC24B1273A80330035FDFC /* XPCProtocol.swift in Sources */,
 				D06C9C4225F7B01300354820 /* FileProviderExtension.swift in Sources */,
-				D06C9C4425F7B01300354820 /* FileProviderItem.swift in Sources */,
-				D06C9C4625F7B01300354820 /* FileProviderEnumerator.swift in Sources */,
+				ACBC24CF273A8F6B0035FDFC /* XPCHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,16 +399,17 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = SomeProduct/SomeProduct.entitlements;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 65S3A9JQ35;
+				DEVELOPMENT_TEAM = FMNG7PNUFW;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = SomeProduct/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				PRODUCT_BUNDLE_IDENTIFIER = SomeOrganization.SomeProduct;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -403,16 +423,17 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = SomeProduct/SomeProduct.entitlements;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 65S3A9JQ35;
+				DEVELOPMENT_TEAM = FMNG7PNUFW;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = SomeProduct/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				PRODUCT_BUNDLE_IDENTIFIER = SomeOrganization.SomeProduct;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -423,9 +444,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = SomeProvider/SomeProvider.entitlements;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 65S3A9JQ35;
+				DEVELOPMENT_TEAM = FMNG7PNUFW;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = SomeProvider/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -433,6 +454,7 @@
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				PRODUCT_BUNDLE_IDENTIFIER = SomeOrganization.SomeProduct.SomeProvider;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -444,9 +466,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = SomeProvider/SomeProvider.entitlements;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 65S3A9JQ35;
+				DEVELOPMENT_TEAM = FMNG7PNUFW;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = SomeProvider/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -454,6 +476,7 @@
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				PRODUCT_BUNDLE_IDENTIFIER = SomeOrganization.SomeProduct.SomeProvider;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -492,6 +515,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		ACB97913273D408800AFA263 /* SomeProviderCommonPackage */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SomeProviderCommonPackage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D06C9C2025F7AFD200354820 /* Project object */;
 }

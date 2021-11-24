@@ -6,11 +6,16 @@
 //
 
 import FileProvider
+import Foundation
+import SomeProviderCommonPackage
 
 class FileProviderExtension: NSObject, NSFileProviderReplicatedExtension {
     var manager: NSFileProviderManager
+    var xpcHandler: XPCHandler
     required init(domain: NSFileProviderDomain) {
         self.manager = NSFileProviderManager(for: domain)!
+        self.xpcHandler = XPCHandler()
+        xpcHandler.run()
         super.init()
     }
     
@@ -28,23 +33,27 @@ class FileProviderExtension: NSObject, NSFileProviderReplicatedExtension {
     }
     
     func fetchContents(for itemIdentifier: NSFileProviderItemIdentifier, version requestedVersion: NSFileProviderItemVersion?, request: NSFileProviderRequest, completionHandler: @escaping (URL?, NSFileProviderItem?, Error?) -> Void) -> Progress {
-        // TODO: implement fetching of the contents for the itemIdentifier at the specified version
+        // TODO: implement fetching of the contents for the itemIdentifier at the specified version\
+
+        let progress = Progress(totalUnitCount: 110)
         
         NSLog("fetchContents")
-//        completionHandler(nil, nil, NSError(domain: NSCocoaErrorDomain, code: NSFeatureUnsupportedError, userInfo:[:]))
         do {
-            var itemPath = try self.manager.temporaryDirectoryURL()
-            itemPath.appendPathComponent("content")
-            let data: Data? = "foo Blablabla".data(using: .utf8)
-            try data!.write(to: itemPath)
-            NSLog(itemPath.path)
-            completionHandler(itemPath, FileProviderItem(identifier: itemIdentifier, size: data!.count), nil)
+            let itemPath = try self.manager.temporaryDirectoryURL()
+            progress.becomeCurrent(withPendingUnitCount: 90)
+            if let xpc = xpcHandler.connection!.remoteObjectProxy() as? XPCProtocol {
+                xpc.fetchContents(for: itemIdentifier, tempURL: itemPath, completionHandler: { url, item, error in
+                    NSLog(url!.path)
+                    completionHandler(url, item, error)})
+            }
+            progress.resignCurrent()
         }
         catch {
             NSLog("failed fetching contents")
         }
+        progress.becomeCurrent(withPendingUnitCount: 20)
         NSLog("done")
-        let progress = Progress(totalUnitCount: 4)
+        progress.resignCurrent()
         return progress
     }
 
